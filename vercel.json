@@ -1,0 +1,16 @@
+{
+  "name": "Github Commits Counter API",
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "(.*)",
+      "dest": "app.py"
+    }
+  ]
+}
