@@ -39,7 +39,7 @@ def get_total_commits(username: str) -> int:
                 }}
         """
 
-        headers = {"Authorization": f"Bearer {getenv("GH_KEY")}"}
+        headers = {"Authorization": f"Bearer {getenv('GH_KEY')}"}
 
         response = post(url,
                         headers=headers,
