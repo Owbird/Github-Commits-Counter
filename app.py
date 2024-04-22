@@ -57,10 +57,9 @@ def get_total_commits(username: str) -> int:
 
 
 def get_badge(commits: int):
-    url = f"https://img.shields.io/badge/Total_Commits_This_Month-{
-        commits}-green"
+    url = "https://img.shields.io/badge"
 
-    response = get(url)
+    response = get(f"{url}/Total_Commits_This_Month-{commits}-green")
 
     return response.text
 
